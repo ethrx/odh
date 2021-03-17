@@ -3,10 +3,6 @@ Where do most data breaches originate? From an open webserver somewhere, hosting
 
 Here's how to find all types of databases through each service.
 
-- **[Services](#services)**
-  - [Censys.io](#censysio)
-  - [BinaryEdge](#binaryedge)
-  - [Shodan](#shodan)
 - **[Databases](#databases)**
   - [ElasticSearch](#elasticsearch)
       - [Exfiltration](#exfiltration)
@@ -16,15 +12,14 @@ Here's how to find all types of databases through each service.
       - [Exfiltration](#exfiltration-1)
       - [Ports](#ports-1)
   - [MongoDB](#mongodb)
+- **[Services](#services)**
+  - [Censys.io](#censysio)
+  - [BinaryEdge](#binaryedge)
+  - [Shodan](#shodan)
 
-# Services
-## Censys.io
-Censys is a very similar service to Shodan, however it gives us a major benifit over Shodan. Censys does have a paid license, however it does not limit search results like Shodan does. Censys allows you to view every page of results, no matter what. You do only get 250 searches per month, though I think that it more than enough.
-https://censys.io
-## BinaryEdge
-## Shodan
+
 # Databases
-Now that you know how to use the mentioned services to find these databases, here's what you need for each type. 
+Here's all the different types of databases you can find using the services I have mentioned. Note, some of these will require authentication or 3rd party software to access. There is not a 100% success rate.
 ## ElasticSearch
 ElasticSearch is a type of database, that does not have authentication by default. This is great for us, as most of these will be unsecured and easy to access.
 
@@ -66,3 +61,10 @@ This program is fantastic, as it simplifies the entirety of an extremely complic
 Default: 6379
 Alternative: unkn.
 ```
+
+# Services
+## Censys.io
+Censys is a very similar service to Shodan, however it gives us a major benifit over Shodan. Censys does have a paid license, however it does not limit search results like Shodan does. Censys allows you to view every page of results, no matter what. You do only get 250 searches per month, though I think that it more than enough.
+https://censys.io
+## BinaryEdge
+## Shodan
