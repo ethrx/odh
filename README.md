@@ -7,10 +7,14 @@ Here's how to find all types of databases through each service.
   - [ElasticSearch](#elasticsearch)
       - [Exfiltration](#exfiltration)
       - [Ports](#ports) 
-      - [Web Identifiers](#webidentifiers)
+      - [Identifiers](#identifiers)
   - [Redis](#redis)
       - [Exfiltration](#exfiltration-1)
       - [Ports](#ports-1)
+  - [Amazon S3](#amazons3)
+      - [Exfiltration](#exfiltration-2)
+      - [Ports](#ports-2)
+      - [Identifiers](#identifiers-1)
   - [MongoDB](#mongodb)
 - **[Services](#services)**
   - [Censys.io](#censysio)
@@ -30,21 +34,21 @@ There is a very nice Chrome extension, called ElasticVue. This application allow
 ### Ports:
 ```
 Default: 9200/9201
-Alternative: 80/443/8080 (default HTTP ports)
+Alternative: Any port that serves HTTP content
 ```
-### Web Identifiers:
+### Identifiers:
 
-**HTML RAW**: 
+**HTML Raw**: 
 ```
 tagline: "You know, for search."
 ```
 
-HTML Title:
+**HTML Title**:
 ```
 none
 ```
 
-ICON: 
+**Favicon**: 
 
 ![](icons/elasticsearch/favicon.ico "ElasticSearch Favicon")
 
@@ -61,7 +65,30 @@ This program is fantastic, as it simplifies the entirety of an extremely complic
 Default: 6379
 Alternative: unkn.
 ```
+## Amazon S3
+You've probably heard of Amazon S3. This service is mainly a static file hosting server, called buckets. However, many can store sensitive files. Sometimes, credentials are leaked that allow you to modify the contents of the bucket. 
 
+### Exfiltration
+There is a command line application that you can use called `aws-cli`. This allows you to run various functions on these servers, such as listing, uploading, and modifiying files. 
+(https://aws.amazon.com/cli/)[https://aws.amazon.com/cli/]
+### Ports:
+```
+Default: 80/443/8080
+Alternative: Any port that serves HTTP content
+```
+### Identifiers:
+**CNAME**:
+```
+[bucketname].s3.[region].amazonaws.com
+```
+**HTML Raw**:
+```
+<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+```
+**HTML Title**:
+```
+bucket_name/none
+```
 # Services
 ## Censys.io
 Censys is a very similar service to Shodan, however it gives us a major benifit over Shodan. Censys does have a paid license, however it does not limit search results like Shodan does. Censys allows you to view every page of results, no matter what. You do only get 250 searches per month, though I think that it more than enough.
