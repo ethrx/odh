@@ -4,11 +4,11 @@ Where do most data breaches originate? From an open webserver somewhere, hosting
 Here's how to find all types of databases through each service.
 
 - **[Services](#services)**
- - [Censys.io](#censys.io)
- - [BinaryEdge](#binary%20edge)
- - [Shodan](#shodan)
+  - [Censys.io](#censys.io)
+  - [BinaryEdge](#binary%20edge)
+  - [Shodan](#shodan)
 - **[Databases](#databases)**
- - [ElasticSearch](#elasticsearch)
+  - [ElasticSearch](#elasticsearch)
 
 # Services
 ## Censys.io
