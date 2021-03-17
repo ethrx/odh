@@ -21,14 +21,18 @@ Now that you know how to use the mentioned services to find these databases, her
 ## ElasticSearch
 ElasticSearch is a type of database, that does not have authentication by default. This is great for us, as most of these will be unsecured and easy to access.
 
-**Ports:**
+### Exfiltration
+There is a very nice Chrome extension, called ElasticVue. This application allows you to browse an ElasticSearch database without making raw requests. It provides a nice GUI that I find very informative. 
+[https://elasticvue.com/](https://elasticvue.com/)
+
+### Ports:
 ```
 Default: 9200/9201
 Alternative: 80/443/8080 (default HTTP ports)
 ```
-**Web Identifiers:**
+### Web Identifiers:
 
-HTML RAW: 
+**HTML RAW**: 
 ```
 tagline: "You know, for search."
 ```
@@ -41,5 +45,17 @@ none
 ICON: 
 
 ![](icons/elasticsearch/favicon.ico "ElasticSearch Favicon")
+
+## Redis
+Redis is a type of database, that does not have authentication by default. This is great for us, as most of these will be unsecured and easy to access.
+
+### Exfiltration
+You can use a few common CLIs, or use netcat/telnet and connect directly.
+
+### Ports:
+```
+Default: 6379
+Alternative: unkn.
+```
 
 ## MongoDB
