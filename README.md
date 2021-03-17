@@ -9,6 +9,13 @@ Here's how to find all types of databases through each service.
   - [Shodan](#shodan)
 - **[Databases](#databases)**
   - [ElasticSearch](#elasticsearch)
+      - [Exfiltration](#exfiltration)
+      - [Ports](#ports) 
+      - [Web Identifiers](#webidentifiers)
+  - [Redis](#redis)
+      - [Exfiltration](#exfiltration-1)
+      - [Ports](#ports-1)
+  - [MongoDB](#mongodb)
 
 # Services
 ## Censys.io
