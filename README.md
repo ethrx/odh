@@ -54,15 +54,15 @@ ICON:
 ![](icons/elasticsearch/favicon.ico "ElasticSearch Favicon")
 
 ## Redis
-Redis is a type of database, that does not have authentication by default. This is great for us, as most of these will be unsecured and easy to access.
+Redis is commonly used as a caching service, database, and data storage server. It's quite complicated and most times you will only find data for websites. However, usually you can edit files in the cache right from the start. So even if you don't find sensitive information, you can edit stored HTML or data used in the website and elevate to stored XSS.
 
 ### Exfiltration
-You can use a few common CLIs, or use netcat/telnet and connect directly.
+You can use a few common CLIs, or my favourite program: Redis Desktop Manager.
+This program is fantastic, as it simplifies the entirety of an extremely complicated application. It's open source, but you can also buy Microsoft Store versions to support the developers. You can find out more about it here:
+[https://github.com/uglide/RedisDesktopManager](https://github.com/uglide/RedisDesktopManager)
 
 ### Ports:
 ```
 Default: 6379
 Alternative: unkn.
 ```
-
-## MongoDB
