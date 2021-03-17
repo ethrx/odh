@@ -38,12 +38,12 @@ Alternative: Any port that serves HTTP content
 ```
 ### Identifiers:
 
-**HTML Raw**: 
+**JSON Raw**: 
 ```
 tagline: "You know, for search."
 ```
 
-**HTML Title**:
+**HTTP Title**:
 ```
 none
 ```
@@ -85,7 +85,7 @@ Alternative: Any port that serves HTTP content
 ```
 <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
 ```
-**HTML Title**:
+**HTTP Title**:
 ```
 bucket_name/none
 ```
