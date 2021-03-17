@@ -28,12 +28,18 @@ Alternative: 80/443/8080 (default HTTP ports)
 ```
 **Web Identifiers:**
 
-HTML/JSON: 
+HTML RAW: 
 ```
 tagline: "You know, for search."
 ```
 
+HTML Title:
+```
+none
+```
+
 ICON: 
+
 ![](icons/elasticsearch/favicon.ico "ElasticSearch Favicon")
 
 ## MongoDB
