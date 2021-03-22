@@ -96,5 +96,19 @@ Censys is a very similar service to Shodan, however it gives us a major benifit 
 https://censys.io
 
 ### Queries
+With Censys you have interesting options for querying and searching. They offer quite advanced search options, however in my experience they often give inaccurate results.
+
+I am quite a fan of these search options:
+```
+443.https.tls.certificate.parsed.names:google.com
+```
+This option allows you to filter by results with SSL certificates mentioning the domain `google.com`. This allows you to filter IPs belonging to this organization. 
+```
+ports:9200 AND NOT 443.https.tls.certificate.parsed.names:*
+```
+This query allows you to filter for ElasticSearch instances, that do not have a domain tied to them. This allows you to find hidden VPSes or networks hosting databases. Though sometimes you will come across personal results.
+
 ## BinaryEdge
+\[TODO\]
 ## Shodan
+\[TODO\]
