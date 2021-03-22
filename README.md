@@ -15,11 +15,12 @@ Here's how to find all types of databases through each service.
       - [Exfiltration](#exfiltration-2)
       - [Ports](#ports-2)
       - [Identifiers](#identifiers-1)
-  - [MongoDB](#mongodb)
+  - ~~[MongoDB](#mongodb)~~
 - **[Services](#services)**
   - [Censys.io](#censysio)
-  - [BinaryEdge](#binaryedge)
-  - [Shodan](#shodan)
+      - [Queries](#queries)
+  - ~~[BinaryEdge](#binaryedge)~~
+  - ~~[Shodan](#shodan)~~
 
 
 # Databases
@@ -93,5 +94,7 @@ bucket_name/none
 ## Censys.io
 Censys is a very similar service to Shodan, however it gives us a major benifit over Shodan. Censys does have a paid license, however it does not limit search results like Shodan does. Censys allows you to view every page of results, no matter what. You do only get 250 searches per month, though I think that it more than enough.
 https://censys.io
+
+### Queries
 ## BinaryEdge
 ## Shodan
